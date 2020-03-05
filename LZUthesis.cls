@@ -135,9 +135,11 @@
   \thispagestyle{empty}
   \pagenumbering{Roman}
   \begin{center}
-    \songti\zihao{-4}
+    \heiti\zihao{-4}
      \begin{flushleft}
-      \LZU@label@classification~
+     	\LZU@label@schoolcode~
+     	\CASTunderline[0pt]{\LZU@value@schoolcode}\\
+      ~~~~\LZU@label@classification~
       \CASTunderline[0pt]{\CAST@value@classification}
        \hskip 9cm
       \LZU@label@confidential~
@@ -218,7 +220,7 @@
   \pagenumbering{Roman}
   \begin{center}
   \begin{flushleft}
-    \songti\zihao{-4}
+    \heiti\zihao{-4}
     \LZU@label@schoolcode~
     \CASTunderline[0pt]{\LZU@value@schoolcode}\\
       ~~~~\LZU@label@classification~
