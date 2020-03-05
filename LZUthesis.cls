@@ -119,6 +119,7 @@
 \newcommand\collaborator[1]{\def\LZU@value@collaborator{#1}}
 \newcommand\englishtitleadd[1]{\def\LZU@value@englishtitleadd{#1}}
 \newcommand\titleadd[1]{\def\LZU@value@titleadd{#1}}
+\newcommand\schoolcode[1]{\def\LZU@value@schoolcode{#1}}
 
 
 %定义单行完整标题
@@ -218,7 +219,9 @@
   \begin{center}
   \begin{flushleft}
     \songti\zihao{-4}
-      \LZU@label@classification~
+    \LZU@label@schoolcode~
+    \CASTunderline[0pt]{\LZU@value@schoolcode}\\
+      ~~~~\LZU@label@classification~
       \CASTunderline[0pt]{\CAST@value@classification}
         \hskip 9cm
       ~~\LZU@label@confidential~
