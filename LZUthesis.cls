@@ -116,6 +116,7 @@
 \newcommand\datebeginAndEnd[1]{\def\LZU@value@\datebeginAndEnd{#1}}
 \newcommand\lzuthesis[1]{\def\LZU@value@lzuthesis{#1}}
 \newcommand\direction[1]{\def\LZU@value@direction{#1}}
+\newcommand\collaborator[1]{\def\LZU@value@collaborator{#1}}
 \newcommand\englishtitleadd[1]{\def\LZU@value@englishtitleadd{#1}}
 \newcommand\titleadd[1]{\def\LZU@value@titleadd{#1}}
 
@@ -166,14 +167,16 @@
       {\CASTunderline[297pt]{\CAST@value@degree}} \\
       \LZU@label@advisor &
       {\CASTunderline[297pt]{\CAST@value@advisor}} \\
+      \LZU@label@collaborator &
+      {\CASTunderline[297pt]{\LZU@value@collaborator}} \\
       \LZU@label@datebeginAndEnd &
       {\CASTunderline[297pt]{\LZU@value@\datebeginAndEnd}}\\
-       \LZU@label@submitdate &
-      {\CASTunderline[297pt]{\CAST@value@submitdate}}\\
+       % \LZU@label@submitdate &
+      % {\CASTunderline[297pt]{\CAST@value@submitdate}}\\
       \LZU@label@defenddate &
       {\CASTunderline[297pt]{\CAST@value@defenddate}}\\
-      \LZU@label@degreedate &
-      {\CASTunderline[297pt]{\CAST@value@degreedate}}
+      % \LZU@label@degreedate &
+      % {\CASTunderline[297pt]{\CAST@value@degreedate}}
     \end{tabular}
 
       \vskip 1.5 cm
@@ -252,13 +255,15 @@
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@degree}} \\
       \LZU@label@advisor &
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@advisor}} \\
+      \LZU@label@collaborator &
+      \multicolumn{4}{l}{\CASTunderline[297pt]{\LZU@value@collaborator}} \\
       \LZU@label@datebeginAndEnd &\multicolumn{4}{l}{\CASTunderline[297pt]{\LZU@value@\datebeginAndEnd}}\\
-       \LZU@label@submitdate &
-      \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@submitdate}}\\
+       % \LZU@label@submitdate &
+      % \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@submitdate}}\\
       \LZU@label@defenddate &
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@defenddate}}\\
-      \LZU@label@degreedate &
-      \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@degreedate}}
+      % \LZU@label@degreedate &
+       % \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@degreedate}}
 
     \end{tabular}
       \vskip 1.4 cm
