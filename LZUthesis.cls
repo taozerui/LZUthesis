@@ -179,11 +179,11 @@
       {\CASTunderline[297pt]{\CAST@value@advisor}} \\
       \LZU@label@collaborator &
       {\CASTunderline[297pt]{\LZU@value@collaborator}} \\
-      \LZU@label@datebeginAndEnd &
+      \makebox[3.2cm][s]{\LZU@label@datebeginAndEnd} &
       {\CASTunderline[297pt]{\LZU@value@\datebeginAndEnd}}\\
        % \LZU@label@submitdate &
       % {\CASTunderline[297pt]{\CAST@value@submitdate}}\\
-      \LZU@label@defenddate &
+      \makebox[3.2cm][s]{\LZU@label@defenddate} &
       {\CASTunderline[297pt]{\CAST@value@defenddate}}\\
       % \LZU@label@degreedate &
       % {\CASTunderline[297pt]{\CAST@value@degreedate}}
@@ -277,10 +277,10 @@
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@advisor}} \\
       \LZU@label@collaborator &
       \multicolumn{4}{l}{\CASTunderline[297pt]{\LZU@value@collaborator}} \\
-      \LZU@label@datebeginAndEnd &\multicolumn{4}{l}{\CASTunderline[297pt]{\LZU@value@\datebeginAndEnd}}\\
+      \makebox[3.2cm][s]{\LZU@label@datebeginAndEnd} &\multicolumn{4}{l}{\CASTunderline[297pt]{\LZU@value@\datebeginAndEnd}}\\
        % \LZU@label@submitdate &
       % \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@submitdate}}\\
-      \LZU@label@defenddate &
+      \makebox[3.2cm][s]{\LZU@label@defenddate} &
       \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@defenddate}}\\
       % \LZU@label@degreedate &
        % \multicolumn{4}{l}{\CASTunderline[297pt]{\CAST@value@degreedate}}
