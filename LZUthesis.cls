@@ -150,8 +150,15 @@
       % Requires \usepackage{graphicx}
     \includegraphics[width=7.4cm]{lzu.pdf}\\
 
-   \bf \zihao{3}\LZU@label@thesis
-    \vskip 1.0cm
+    \heiti \fontsize{19pt}{13pt}
+   \begin{center}
+   	\bf{\LZU@label@thesis}
+   \end{center}
+   \vskip .1cm \heiti \fontsize{15pt}{13pt}
+   \begin{center}
+   	\bf{\LZU@label@mpORms}
+   \end{center}
+   \vskip .3cm
     \zihao{4}
     \def\tabcolsep{1pt}
    \renewcommand{\arraystretch}{1.4}%改变表格的行间距
@@ -232,10 +239,18 @@
     \vskip 10pt
 
       % Requires \usepackage{graphicx}
-    \includegraphics[width=7.4cm]{lzu.pdf}\\
+    \includegraphics[width=2.5in,height=0.7in]{lzu.pdf}\\
 
-   \bf \zihao{3}\LZU@label@thesis
-    \vskip 1.0cm
+   \heiti \fontsize{19pt}{13pt}
+   \begin{center}
+   \bf{\LZU@label@thesis}
+   \end{center}
+  \vskip .1cm
+  \heiti \fontsize{15pt}{13pt}
+   \begin{center}
+   \bf{\LZU@label@mpORms}
+   \end{center}
+    \vskip .3cm
    % \vskip \stretch{5}
     \zihao{4}
     \def\tabcolsep{1pt}
