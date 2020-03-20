@@ -65,8 +65,8 @@ FUNCTION {output.nonnull}
     { ", " * write$ }
     { output.state after.block =
     { add.period$ write$
-%      newline$
-      " " write$
+      newline$
+      "\newblock " write$
     }
     { output.state before.all =
         'write$
@@ -259,6 +259,13 @@ FUNCTION {emphasize}
   if$
 }
 
+FUNCTION {inemphasize}
+{ duplicate$ empty$
+    { pop$ "" }
+    { "{In \em " swap$ * "}" * }
+  if$
+}
+
 INTEGERS { nameptr namesleft numnames }
 
 FUNCTION {bbl.etal}
@@ -334,7 +341,8 @@ FUNCTION {format.editors}
 FUNCTION {format.title}
 { title empty$
     { "" }
-    { "{\it " title "t" change.case$ * "}" * }
+    % { "{\it " title "t" change.case$ * "}" * }
+    { title }
   if$
 }
 
@@ -788,9 +796,7 @@ FUNCTION {book}
     }
   if$
   new.block
-  link.open
-  format.title add.blank2 "[M]" * "title" output.check
-  link.shut
+  format.title emphasize "[M]" * "title" output.check
   crossref missing$
     { format.bvolume output
       new.block
@@ -825,7 +831,7 @@ FUNCTION {article}
       link.open
       %journal emphasize "journal" output.check
       journal add.blank2
-      "journal" output.check
+      emphasize "journal" output.check
       %format.date "year" output.check
       %new.block
       year output
@@ -927,7 +933,7 @@ FUNCTION {inproceedings}
   format.title "[C]" * "title" output.check
   new.block
   crossref missing$
-    { format.in.ed.booktitle "booktitle" output.check
+    { format.in.ed.booktitle inemphasize "booktitle" output.check
       format.bvolume output
       %format.number.series output
       %format.pages output
@@ -1033,7 +1039,7 @@ FUNCTION {phdthesis}
   format.authors "author" add.period$ output.check
   new.block
   % format.title remove.dots ": " * phdthesis.type * output
-  format.title "[D]" * "title" output.check
+  format.title emphasize "[D]" * "title" output.check
   new.block
   format.address.school output
   %address output
@@ -1177,7 +1183,7 @@ FUNCTION {begin.bib}
     { preamble$ write$ newline$ }
   if$
   "\providecommand{\href}[2]{#2}"
-  "\begingroup\zihao{5}\raggedright\begin{thebibliography}{" * longest.label  *
+  "\begingroup\zihao{5}\begin{thebibliography}{" * longest.label  *
   "}\linespread{1}\selectfont" * write$ newline$
   init.bib
 }
